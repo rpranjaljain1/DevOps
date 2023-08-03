@@ -1,2 +1,8 @@
 Git init- Initialises an empty git repository. This will start only in chosen  folder would not affect other folders.
 git status - Shows status
+git add- Files will get staged
+git checkout -b <branch name> : Switch to new branch
+git checkout <branch name> : switches to existing branch
+git commit -m "" - File will be tracked
+git restore --staged <file name> : This will remove a file from staging area
+git revert <commit id> : This will revert back
