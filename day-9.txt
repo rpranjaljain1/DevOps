@@ -1,1 +1,2 @@
-Hello
+Git init- Initialises an empty git repository. This will start only in chosen  folder would not affect other folders.
+git status - Shows status
