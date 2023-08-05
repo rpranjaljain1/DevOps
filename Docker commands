@@ -10,13 +10,16 @@ Basic
 Images
 : docker images
 : docker pull
-: docker rmi - remove images
+: docker rmi  :remove images
 ————————————
 Containers
-: docker ps -shows all running containers
-: docker run -runs container with c id and tags like 'it'
+: docker ps :::shows all running containers
+  docker ps -a::: show all the hidden containers
+: docker run <container name or id> :::runs container with container id and tags like 'it'
+  docker run --<Name of container> -it <UBUNTU> ::: (when image is not there, pull directly and run)
 : docker start 
 : docker stop
+  docker attach <container name or id>:::Go inside of container
 ————————————
 System
 : docker stats
