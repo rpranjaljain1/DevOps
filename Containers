@@ -1,0 +1,34 @@
+What are containers?
+Containers are running instances of Docker images.
+A container image is a lightweight, stand-alone, executable package of software that includes everything neede
+to run it: Code, runtime, system tools, and system libraries. settings
+
+Feature of containers
+
+Lightweight
+less resources are used
+booting of containers are very fast
+start/stop/kill/remove very easily
+OS resources can be shared with in Docker
+containers run on same machine sharing the same OS, makes them faster.
+
+COMMANDS
+: docker ps
+: docker run ImageName
+: docker start ContainerName/ID
+: docker stop ContainerName/ID
+
+: docker pause ContainerName/ID
+: docker unpause  ContainerName/ID
+
+: docker top ContainerName/ID
+: docker stats ContainerName/ID
+
+: docker attach ContainerName/ID
+
+: docker kill ContainerName/ID
+: docker rm ContainerName/ID
+
+: docker history ImageName/ID
+
+https://www.youtube.com/watch?v=Rv3DAJbDrS0&list=PLhW3qG5bs-L99pQsZ74f-LC-tOEsBp2rK&index=10&ab_channel=AutomationStepbyStep
