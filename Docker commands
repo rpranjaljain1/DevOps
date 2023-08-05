@@ -20,6 +20,8 @@ Containers
 : docker start 
 : docker stop
   docker attach <container name or id>:::Go inside of container
+  docker kill <container name or id>::: Kills the running container
+ docker rm <container name or id>::: deletes the running container
 ————————————
 System
 : docker stats
