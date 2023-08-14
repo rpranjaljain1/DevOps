@@ -5,4 +5,12 @@ Containers are ephemeral in nature-->containers have short life-->Since docker i
 --->>Auto healing
 If somebody kills the container it will not start again. There are 100s of reasons your container can go down.
 --->>Auto scaling
-Docker does not supports auto healing.
+Docker does not support auto-healing.
+--->>Does not support any enterprise-level support:
+The application should have firewall support, LB, API gateways, and an auto scaler.
+
+Solution with K8s
+--->>Host- by default k8s is a cluster.
+cluster is basically a group of nodes. we create one master node and a slave node. it has multi-node architecture, immediately it will host a pod in different host.
+--->Auto healing- Go to YAML file and edit it to increase from 1 to 10, this is manual. 
+horizontal pod auto scaling supports automatically auto scaling.. if load increases deploy more containers.
