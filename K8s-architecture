@@ -1,5 +1,13 @@
-K8s has 3 componenets in worker nodes
+K8s has 3 components in worker nodes
 
 1. Kubelet: Responsible for the creation of the pod and ensures that the pod is always running and if not takes the necessary action.
-2. Kube-proxy: Responsible for the generating the IP addresses or load balancing (Uses IP tables in linux m/c)
-3. Conatiner runtime: Respomsible to run container.
+2. Kube-proxy: Responsible for generating the IP addresses or load balancing (Uses IP tables in Linux m/c)
+3. Container runtime: Responsible to run the container.
+
+--> Master node/Control plane
+1. API server- Who will decide on which node pod needs to be created, it is a core component which deals when multiple users are giving request. Component which basically 
+exposes your K8s.
+2. Scheduler- Responsible to schedule resources on K8s. API server decides schedules executes.
+3. etcd- is a key-value store. Helps to restore the cluster
+4. Controler manager- K8s supports auro scaling so it has to have some components like replica set.
+5. Cloud control manager- K8s can run on cloud. There is a request to create LB or S3. For this K8s needs to convert this request to work on cloud.
