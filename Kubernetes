@@ -1,0 +1,8 @@
+Issues with Docker
+
+--->>Single host nature:
+Containers are ephemeral in nature-->containers have short life-->Since docker is hosted on a single host some containers might killed due to lack of memory resources.
+--->>Auto healing
+If somebody kills the container it will not start again. There are 100s of reasons your container can go down.
+--->>Auto scaling
+Docker does not supports auto healing.
