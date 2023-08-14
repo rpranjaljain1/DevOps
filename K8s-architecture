@@ -1,0 +1,5 @@
+K8s has 3 componenets in worker nodes
+
+1. Kubelet: Responsible for the creation of the pod and ensures that the pod is always running and if not takes the necessary action.
+2. Kube-proxy: Responsible for the generating the IP addresses or load balancing (Uses IP tables in linux m/c)
+3. Conatiner runtime: Respomsible to run container.
